@@ -1,4 +1,4 @@
-# 📅 Work Shift Scheduler App
+# 📅 Work Chronicle App
 
 This application is designed to help you **manage and track your work shifts with ease**. It supports **automatic schedule generation** for several shift patterns, including:
 
