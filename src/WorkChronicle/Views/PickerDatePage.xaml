@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:WorkChronicle.ViewModels"
+             xmlns:lang="clr-namespace:WorkChronicle.Resources.Localization"
+             x:Class="WorkChronicle.Views.PickerDatePage"
+             x:DataType="viewmodels:PickerDateViewModel"
+             Title="{x:Static lang:AppResources.CreateANewMonthSchedule}">
+
+    <Frame 
+        BackgroundColor="White"
+        BorderColor="Black"
+        CornerRadius="12"
+        Padding="15,15,15,15"
+        Margin="15,5,15,5">
+        
+        <StackLayout 
+                Spacing="8"
+                Padding="15,15,15,15">
+
+            <Label 
+              Text="{x:Static lang:AppResources.EnterShiftCyclePattern}" 
+              FontSize="17" />
+            <Picker 
+                Title="{x:Static lang:AppResources.SelectShiftPattern}"
+                ItemsSource="{Binding WorkSchedules}"
+                SelectedItem="{Binding SelectedSchedule, Mode=TwoWay}"
+                HorizontalOptions="Start"/>
+
+            <Label 
+               Text="{x:Static lang:AppResources.SelectStartingDayWorkCycle}" 
+               FontSize="17" />
+            <DatePicker 
+                    x:Name="StartDatePicker"
+                    MinimumDate="2021-01-01" 
+                    MaximumDate="2026-12-31"
+                    FontSize="15"
+                    Margin="0,0,150,0"
+                    Date="{Binding SelectedStartDate}"/>
+
+            <Label 
+               Text="{x:Static lang:AppResources.SelectStartingTimeForDayShift}" 
+               FontSize="17" />
+            <TimePicker 
+                    Time="{Binding DayShiftStartTime,Mode=TwoWay}" 
+                    Format="HH:mm"
+                    FontSize="15"
+                    Margin="0,0,150,0"/>
+
+            <Label 
+               Text="{x:Static lang:AppResources.SelectStartingTimeForNigthShift}"  
+               FontSize="17" />
+            <TimePicker 
+                    Time="{Binding NightShiftStartTime,Mode=TwoWay}" 
+                    IsEnabled="{Binding IsStatNightShiftEnabled}"
+                    Format="HH:mm" 
+                    FontSize="15"
+                    Margin="0,0,150,0"/>
+
+            <Label 
+               Text="{x:Static lang:AppResources.SelectTotalShiftHours}" 
+               FontSize="17" />
+            <TimePicker 
+                Time="{Binding TotalShiftHours,Mode=TwoWay}" 
+                Format="HH:mm"
+                Margin="0,0,150,0"/>
+
+
+            <Label 
+                 Text="{x:Static lang:AppResources.EnterFirstShift}" 
+                 FontSize="17" />
+            <Picker 
+                Title="{x:Static lang:AppResources.SelectFirstShift}"
+                ItemsSource="{Binding WorkShift}"
+                SelectedItem="{Binding SelectedFirstShift, Mode=TwoWay}"
+                IsEnabled="{Binding IsFirstShiftEnabled}"
+                HorizontalOptions="Start"
+                Margin="0,0,100,0"/>
+
+            <Button 
+                Text="{x:Static lang:AppResources.GenerateSchedule}" 
+                Command="{Binding GenerateScheduleCommand}"/>
+
+        </StackLayout>
+    </Frame>
+</ContentPage>

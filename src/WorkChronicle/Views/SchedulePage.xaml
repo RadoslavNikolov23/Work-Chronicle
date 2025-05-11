@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:WorkChronicle.ViewModels"
+             xmlns:controls="clr-namespace:WorkChronicle.Controls;assembly=WorkChronicle.Controls"
+             xmlns:models="clr-namespace:WorkChronicle.Structure.Models.Contracts;assembly=WorkChronicle.Structure"
+             xmlns:lang="clr-namespace:WorkChronicle.Resources.Localization"
+             x:Class="WorkChronicle.Views.SchedulePage"
+             x:DataType="viewmodels:ScheduleEditViewModel"
+             Title="{x:Static lang:AppResources.EditAndSaveSchedule}">
+
+    <ScrollView>
+        <VerticalStackLayout 
+                            Spacing="6"
+                            Padding="20">
+
+            <Label 
+                 Text="{Binding CalendarMonthYear}" 
+                 FontSize="22" 
+                 FontAttributes="Bold"
+                 HorizontalOptions="Center"/>
+
+            <controls:CalendarGridView 
+                                       BindingContext="{Binding}"/>
+
+            <Frame 
+                   BackgroundColor="white"
+                   BorderColor="Gray"
+                   CornerRadius="12"
+                   Padding="5">
+                
+                <StackLayout Spacing="5">
+                    
+                    <Label 
+                        Text="{x:Static lang:AppResources.Information}" 
+                        FontSize="15"
+                        FontAttributes="Bold"                        
+                        TextColor="Black"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label 
+                         Text="{Binding TextMessage}" 
+                         FontSize="15" 
+                         TextColor="Black"
+                         HorizontalOptions="Center"/>
+                    
+                    <BoxView 
+                             Color="DarkGreen"
+                             HeightRequest="2"
+                             HorizontalOptions="Fill" />
+                    
+                    <Label 
+                        Text="{Binding HoursMessage, Mode=TwoWay}" 
+                        FontSize="15" 
+                        TextColor="Black"
+                        HorizontalOptions="Center"/>
+                    
+                </StackLayout>
+            </Frame>
+
+            <VerticalStackLayout    
+                                Spacing="10"
+                                Padding="0"
+                                HorizontalOptions="Start"
+                                VerticalOptions="End">
+
+                <HorizontalStackLayout 
+                                      Spacing="10">
+
+                    <Button
+                           Text="{x:Static lang:AppResources.CompensateSelectedShift}"
+                           Command="{Binding CompensateButtonCommand}"
+                           WidthRequest="170"
+                           HeightRequest="50" />
+
+                    <Button
+                           Text="{x:Static lang:AppResources.EditSelectedShift}"
+                           Command="{Binding EditShiftCommand}"
+                           WidthRequest="173"
+                           HeightRequest="50" />
+                </HorizontalStackLayout>
+                
+                <HorizontalStackLayout 
+                                       Spacing="10">
+                    <Button
+                           Text="{x:Static lang:AppResources.MarkSelectedShiftSickLeave}"
+                           Command="{Binding SickLeaveButtonCommand}"
+                           WidthRequest="170"
+                           HeightRequest="50" />
+
+                    <Button
+                           Text="{x:Static lang:AppResources.MarkSelectedShiftPaidUnpaidLeave}"
+                           Command="{Binding VacationDayButtonCommand}"
+                           WidthRequest="173"
+                           HeightRequest="50" />
+
+                </HorizontalStackLayout>
+                    
+                    <Button 
+                        Text="{x:Static lang:AppResources.GoBackToMain}"
+                        Command="{Binding GoBackButtonCommand}"
+                        WidthRequest="355"
+                        HeightRequest="50"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
