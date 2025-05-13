@@ -28,9 +28,6 @@
 
                 // -3) Starts to Save the Schedules to the DB
 
-                 // -3) Starts to Save the Schedules to the DB
-
-
                 creatingPopup.Close();
                 await Task.Delay(20);
 
