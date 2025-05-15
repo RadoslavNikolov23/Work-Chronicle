@@ -41,7 +41,7 @@ The app will automatically generate a complete schedule for the selected month �
 You can fine-tune your schedule in the Edit Page:
 
 - 🛠️ Modify existing shifts  
-- 🔄 Compensate missed shifts  
+- 🔄 Compensate given shifts  
 - 🔁 Change a shift's type (Day, Night, or Rest Day)  
 - 📅 Mark shifts as **Sick Leave** or **Vacation Leave**  
 
@@ -50,7 +50,7 @@ You can fine-tune your schedule in the Edit Page:
 ## 📊 Monthly Hours Report
 
 The app calculates your **total working hours per month** and compares them against the legally required hours in **Bulgaria**.  
-You’ll be notified if you’re under or over the expected total.
+You’ll be informed if you’re under or over the expected total.
 
 ---
 
