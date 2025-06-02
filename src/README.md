@@ -22,12 +22,53 @@ Please contact me via **GitHub messages** or at **[custom_rd@abv.bg]**.
 
 The repository includes the following projects:
 
-- **Main App Project** – Entry point of the MAUI application.
-- **Common Class Library** – Shared enums, helpers, and static utilities.
-- **Structure Library** – Business logic layer for shift patterns and schedule generation.
-- **Data Library** – Handles SQLite database access and partial repository logic.
-- **MAUI Controls Library** – Contains custom calendar and popup components.
-- **Unit Test Project** – Test scaffolding for different layers of the app.
+### 🟦 Main App Project
+- Entry point of the .NET MAUI application.
+- Contains the Views and ViewModels.
+- Handles user interaction and delegates to the Services layer.
+
+### 📦 Common Class Library
+- Shared components used across the entire app.
+- Includes:
+  - Enums
+  - Static helpers
+  - Constants and utilities
+
+
+### 🔌 Services Library
+- **Bridges the ViewModel layer with the Structure (Core Logic) and Data (Database) layers.**
+- Responsibilities:
+  - Calls methods from the **Structure Library** for shift and schedule logic.
+  - Interacts with the **Data Library** to load/save data.
+  - Exposes high-level functions tailored for the UI.
+  - Centralizes application workflows (e.g., creating and saving a schedule).
+
+### ⚙️ Structure Library (Core Logic)
+- Core business logic layer.
+- Handles:
+  - Shift pattern management
+  - Schedule generation algorithms
+  - Business rules and validations
+
+### 🗄️ Data Library
+- Manages data persistence using **SQLite.NET PCL**.
+- Includes:
+  - Database access logic
+  - Data models and table mappings
+  - Partial repository implementations
+
+### 🎛️ MAUI Controls Library
+- Reusable UI components for the application.
+- Includes:
+  - Custom calendar views
+  - Popups and dialogs
+  - Toolkit-based components to enhance UI/UX
+
+### ✅ Unit Test Project
+- Covers testing for:
+  - Business logic (Structure)
+  - Data layer (SQLite operations)
+  - Service workflows (end-to-end logic)
 
 ---
 
