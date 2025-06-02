@@ -1,0 +1,26 @@
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="WorkChronicle.Controls.Popups.LoadingPopup"
+    Color="Transparent"
+    CanBeDismissedByTappingOutsideOfPopup="False">
+
+    <Grid 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center">
+        
+        <Frame BackgroundColor="DarkGray"
+               Padding="20"
+               CornerRadius="18"
+               HasShadow="True"
+               IsClippedToBounds="True">
+            
+            <ActivityIndicator IsRunning="True"
+                               BackgroundColor="DarkGray"
+                               Color="Black"
+                               WidthRequest="50"
+                               HeightRequest="50" />
+        </Frame>
+    </Grid>
+</toolkit:Popup>
