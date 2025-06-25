@@ -63,4 +63,5 @@ You’ll be informed if you’re under or over the expected total.
 ## 📄 License
 
 This project uses a **custom license**. You may download and use the app for personal, non-commercial purposes only.  
-See [LICENSE.txt](LICENSE.txt) for full terms.
+
+See [LICENSE](CUSTOM_LICENSE.txt) for full terms.
