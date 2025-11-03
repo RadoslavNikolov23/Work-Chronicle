@@ -12,13 +12,13 @@
 ## <h3>📱 Mobile Screenshot</h3>
 <p>
 <img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2001.png" width="150" />
-<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2002.png" width="150" />
-<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2003.png" width="150" />
+<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2002.jpg" width="150" />
+<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2003.jpg" width="150" />
 </p>
 <p>
-<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2004.png" width="150" />
-<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2005.png" width="150" />
-<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2006.png" width="150"/> 
+<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2004.jpg" width="150" />
+<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2005.jpg" width="150" />
+<img src="https://github.com/RadoslavNikolov23/Work-Chronicle/blob/main/Screenshots/Screenshot%202025%2006.jpg" width="150"/> 
 </p>
 
 ---
@@ -56,7 +56,7 @@ You’ll be informed if you’re under or over the expected total.
 
 ## 📥 Download
 
-👉 ** Soon to be available -- [Download the app here] ()**  
+👉 [Available on Play Google](https://play.google.com/store/apps/details?id=com.hebrostech.workchonicle)  
 
 ---
 
