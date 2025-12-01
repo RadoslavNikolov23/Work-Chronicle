@@ -2,6 +2,7 @@
 
 **Work Chronicle** helps you manage and track your work shifts effortlessly. It supports **automatic schedule generation** for a variety of shift patterns, including:
 
+- ✅ First and Second Shift
 - ✅ 24-Hour Day Shift  
 - ✅ Day Day Shift  
 - ✅ Day Night Shift  
