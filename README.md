@@ -43,7 +43,7 @@ You can fine-tune your schedule in the Edit Page:
 
 - 🛠️ Modify existing shifts  
 - 🔄 Compensate given shifts  
-- 🔁 Change a shift's type (Day, Night, or Rest Day)  
+- 🔁 Change a shift's type (First, Second, Day, Night, or Rest Day)  
 - 📅 Mark shifts as **Sick Leave** or **Vacation Leave**  
 
 ---
